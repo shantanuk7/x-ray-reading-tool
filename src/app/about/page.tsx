@@ -29,9 +29,9 @@ export default function About() {
         </p>
         <ul>
           <li>Deep Learning and Transfer Learning: Given the unstructured nature of X-ray images, our tool harnesses the power of deep learning and transfer learning algorithms. This allows it to extract meaningful features from the images, enabling accurate classification and detection of pneumonia cases.</li>
-          <li>Multi-Class Classification: The tool classifies Chest X-ray images into three distinct categories: 'NORMAL', 'bacteria', and 'virus'. This multi-class classification capability enhances its versatility and usefulness in identifying different types of pneumonia.</li>
+          <li>Multi-Class Classification: The tool classifies Chest X-ray images into three distinct categories: &lsquo;NORMAL&rsquo;, &lsquo;bacteria&rsquo;, and &lsquo;virus&rsquo;. This multi-class classification capability enhances its versatility and usefulness in identifying different types of pneumonia.</li>
           <li>Robust Training Set: Our tool has been trained on a substantial dataset containing over 5,000 labeled Chest X-ray images. This extensive training ensures that the model has learned a diverse range of patterns, leading to improved accuracy and generalization on new, unseen data.</li>
-          <li>Comprehensive Test Set: To evaluate the tool's performance, we have curated a test set comprising approximately 3,000 Chest X-ray images without labels. These images will be used for prediction, allowing us to assess the model's ability to make accurate and reliable classifications on unseen data.</li>
+          <li>Comprehensive Test Set: To evaluate the tool&rsquo;s performance, we have curated a test set comprising approximately 3,000 Chest X-ray images without labels. These images will be used for prediction, allowing us to assess the model&rsquo;s ability to make accurate and reliable classifications on unseen data.</li>
         </ul>
       </section>
       <section>
@@ -44,3 +44,4 @@ export default function About() {
       </section>
     </div>
   );
+}
