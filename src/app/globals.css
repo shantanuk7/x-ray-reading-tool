@@ -30,6 +30,15 @@ body {
   flex-direction: column;
 }
 
+.flex-all-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============header============== */
+
+
 header{
   color: var(--neutral-white);
   display: flex;
@@ -63,18 +72,19 @@ nav > a {
   font-weight: bold;
   background-color: var(--accent-teal);
   color: var(--primary-dark);
-  margin-left: 2em;
   padding: 5px 10px;
   border-radius: 7px;
   border: none;
 }
+
+/*=============== MAIN CONTENT ============== */
 
 main {
   padding: 1em;
   flex-grow: 1;
   width: 100%;
   background-color: var(--primary-dark);
-
+  
 }
 
 .mainBox{
@@ -82,4 +92,32 @@ main {
   width: 100%;
   border-radius: 20px;
   background-color: var(--secondary-dark);
+  display: flex;
+  text-align: center;
+  color:var(--neutral-white);
 }
+
+
+/*=============== INNER BOX CONTENT ============== */
+
+.uploadIcon{
+  padding: 5px;
+  width: 100px;
+}
+
+.mainBox > div > h2{
+  padding: 10px;
+}
+
+.workSpace {
+  flex-grow: 1;
+  height: 100%;
+}
+/*=============== Sidebar ============== */
+.sideBar {
+  width: 300px;
+  flex-shrink: 0;
+  border: 1px solid white;
+
+}
+

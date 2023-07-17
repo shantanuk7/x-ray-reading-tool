@@ -6,7 +6,7 @@ export default function Header(){
                 <a href="#About">About</a>
                 <a href="#Datasets">Datasets</a>
                 <a href="#GitHub">GitHub</a>
-                <button className="accent-btn">Contribute</button>
+                <button className="accent-btn" style={{marginLeft:"2em"}}>Contribute</button>
             </nav>
         </header>
     )
