@@ -68,7 +68,7 @@ loaded_full_model = load_model('./python/model.h5')
 
 unique = ['NORMAL', 'bacteria', 'virus']
 # Get custom image filepaths
-custom_path = "./python/images/x-ray.jpeg" # Image Folder Path
+custom_path = "./public/upload/xray.jpeg" # Image Folder Path
 custom_image_paths = [custom_path]
 custom_data = create_data_batches(custom_image_paths, test_data=True)
 custom_data
