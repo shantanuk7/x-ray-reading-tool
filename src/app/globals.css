@@ -120,6 +120,7 @@ main {
 .uploadIcon{
   padding: 5px;
   width: 100px;
+  color: white;
 }
 
 .mainBox > div > h2{
@@ -130,6 +131,12 @@ main {
   flex-grow: 1;
   height: 100%;
 }
+
+
+.accent-btn:hover{
+  cursor:pointer;
+}
+
 /*=============== Sidebar ============== */
 .sideBar {
   width: 300px;
