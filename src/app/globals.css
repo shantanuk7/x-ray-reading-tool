@@ -255,3 +255,69 @@ main {
 .image-container h3 {
   margin-bottom: 10px;
 }
+
+
+
+
+/*=============== Contribute============== */
+
+.contribute{
+  margin-top: 20px;
+}
+
+.contribute-head{
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--neutral-white);
+  margin: 10px;
+  padding: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  
+}
+
+input,
+textarea,
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: var(--secondary-dark);
+  color: var(--neutral-white);
+  border: none;
+  border-radius: 5px;
+}
+
+input[type='submit'] {
+  background-color: var(--accent-teal);
+  color: var(--neutral-white);
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.animation-container {
+  text-align: center;
+  font-size: 18px;
+  display: none;
+  margin-top: 20px;
+}
+
+.heart-icon {
+  color: red;
+  animation: beat 1.5s infinite alternate;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

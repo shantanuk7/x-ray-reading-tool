@@ -6,7 +6,7 @@ export default function Header(){
                 <a href="/about">About</a>
                 <a href="/dataset">Datasets</a>
                 <a href="https://github.com/shantanuk7/x-ray-reading-tool/">GitHub</a>
-                <button className="accent-btn" style={{marginLeft:"2em"}}>Contribute</button>
+                <button className="accent-btn" style={{marginLeft:"2em"}}><a href="/contribute">Contribute</a></button>
             </nav>
         </header>
     )
