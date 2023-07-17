@@ -3,9 +3,9 @@ export default function Header(){
         <header>
             <h1>X-ray Tool <sup> Experiment </sup> </h1>
             <nav>
-                <a href="#About">About</a>
-                <a href="#Datasets">Datasets</a>
-                <a href="#GitHub">GitHub</a>
+                <a href="/about">About</a>
+                <a href="/dataset">Datasets</a>
+                <a href="https://github.com/shantanuk7/x-ray-reading-tool/">GitHub</a>
                 <button className="accent-btn" style={{marginLeft:"2em"}}>Contribute</button>
             </nav>
         </header>
