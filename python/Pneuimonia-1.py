@@ -1,3 +1,7 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+
 # Create a function to load a trained model
 import tensorflow_hub as hub
 import numpy as np
@@ -9,9 +13,11 @@ def load_model(model_path):
   """
   Loads a saved model from a specified path.
   """
-  print(f"Loading saved model from: {model_path}")
+  # print(f"Loading saved model from: {model_path}")
   model = tf.keras.models.load_model(model_path,
                                      custom_objects={"KerasLayer":hub.KerasLayer})
+  # Disable progress output during predictions or other operations
+  
   return model
   # Load in the full model
 
@@ -51,7 +57,7 @@ def create_data_batches(X, y=None, batch_size=BATCH_SIZE, valid_data=False, test
   """
   # If the data is a test dataset, we probably don't have have labels
   if test_data:
-    print("Creating test data batches...")
+    # print("Creating test data batches...")
     data = tf.data.Dataset.from_tensor_slices((tf.constant(X))) # only filepaths (no labels)
     data_batch = data.map(process_image).batch(BATCH_SIZE)
     return data_batch
@@ -59,6 +65,7 @@ def create_data_batches(X, y=None, batch_size=BATCH_SIZE, valid_data=False, test
 
   return data_batch
 loaded_full_model = load_model('./python/model.h5')
+
 unique = ['NORMAL', 'bacteria', 'virus']
 # Get custom image filepaths
 custom_path = "./python/images/x-ray.jpeg" # Image Folder Path
@@ -71,4 +78,3 @@ custom_preds = loaded_full_model.predict(custom_data)
 # Get custom image prediction labels
 custom_pred_labels = [get_pred_label(custom_preds[i]) for i in range(len(custom_preds))]
 print(custom_pred_labels)
-
