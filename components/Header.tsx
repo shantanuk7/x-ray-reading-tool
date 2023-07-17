@@ -1,7 +1,7 @@
 export default function Header(){
     return(
         <header>
-            <h1>X-ray Tool</h1>
+            <h1>X-ray Tool <sup> Experiment </sup> </h1>
             <nav>
                 <a href="#About">About</a>
                 <a href="#Datasets">Datasets</a>
