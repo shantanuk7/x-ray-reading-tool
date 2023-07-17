@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 export default function Dataset(){
     return(
         <div className="dataset">
@@ -24,15 +24,15 @@ export default function Dataset(){
          <div className="image-row">
         <div className="image-container">
           <h3>Normal</h3>
-          <img src='/images/normal.jpeg' alt="Normal" />
+          <Image src='/images/normal.jpeg' alt="Normal" />
         </div>
         <div className="image-container">
           <h3>Bacterial Pneumonia</h3>
-          <img src="/images/bacterial_pneumonia.jpeg" alt="Bacterial Pneumonia" />
+          <Image src="/images/bacterial_pneumonia.jpeg" alt="Bacterial Pneumonia" />
         </div>
         <div className="image-container">
           <h3>Viral Pneumonia</h3>
-          <img src="/images/viral_pneumonia.jpeg" alt="Viral Pneumonia" />
+          <Image src="/images/viral_pneumonia.jpeg" alt="Viral Pneumonia" />
         </div>
       </div>
 
